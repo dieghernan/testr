@@ -316,7 +316,7 @@ DEM_mat %>%
   plot_3d(DEM_mat, zscale = 5 + fact)
 
 # Render gif
-render_gif(
+render_movie(
   gif_file,
   title_text = title,
   title_position = "north",

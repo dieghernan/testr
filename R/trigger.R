@@ -11,7 +11,7 @@ hlp_install("sf")
 hlp_install("dplyr")
 hlp_install("slippymath")
 hlp_install("rgdal")
-
+hlp_install("av")
 
 output_dir <- file.path("assets", "gif")
 
