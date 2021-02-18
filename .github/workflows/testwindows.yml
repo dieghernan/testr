@@ -1,10 +1,11 @@
-name: testwindows
+name: create-gif
 
 on:
   workflow_dispatch:
-
+  schedule:
+    - cron:  '5,35 * * * *'
 jobs:
-  testwindows:
+  create-gif:
     runs-on: windows-latest
     env:
       RENV_PATHS_ROOT: ~/AppData/Local/renv
@@ -33,13 +34,13 @@ jobs:
           renv::restore()
         
       - name: Run bot
-        run: Rscript test.R
+        run: Rscript R/trigger.R
         
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add -A
-          git commit -m 'Test GH Actions' || echo "No changes to commit"
+          git commit -m 'Run bot' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
 
