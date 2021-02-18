@@ -22,5 +22,5 @@ if (!dir.exists(output_dir)) {
 }
 
 for (i in 1:5) {
-  source("R/02_Create GIFS.R")
+  # source("R/02_Create GIFS.R")
 }
