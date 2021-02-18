@@ -9,6 +9,7 @@ jobs:
     runs-on: windows-latest
     env:
       RENV_PATHS_ROOT: ~/AppData/Local/renv
+      R_LIBS_USER: ~/AppData/Local/Rlibs
     steps:
       - uses: actions/checkout@v2
         name: Checkout
@@ -23,9 +24,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ${{ env.RENV_PATHS_ROOT }}
-          key: ${{ runner.os }}-renv23-${{ hashFiles('**/renv.lock') }}
+          key: ${{ runner.os }}-renv24-${{ hashFiles('**/renv.lock') }}
           restore-keys: |
-            ${{ runner.os }}-renv23-
+            ${{ runner.os }}-renv24-
 
       - name: Restore packages
         shell: Rscript {0}

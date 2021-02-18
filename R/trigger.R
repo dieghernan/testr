@@ -21,6 +21,4 @@ if (!dir.exists(output_dir)) {
   print("Dir already exists!")
 }
 
-for (i in 1:5) {
-  # source("R/02_Create GIFS.R")
-}
+source("R/02_Create GIFS.R")
