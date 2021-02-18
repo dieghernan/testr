@@ -326,10 +326,10 @@
     },
     "giscoR": {
       "Package": "giscoR",
-      "Version": "0.2.4-9000",
+      "Version": "0.2.2",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "823d97467b952c813f74c45671c6ab06"
+      "Hash": "fc88178efb2a2b963252a9469e6be148"
     },
     "glue": {
       "Package": "glue",
@@ -515,15 +515,10 @@
     },
     "mapSpain": {
       "Package": "mapSpain",
-      "Version": "0.2.0-9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "mapSpain",
-      "RemoteUsername": "ropenspain",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "c0ae63a972713895af4e49f57b461a6570f4b843",
-      "Hash": "92aa20039234bb692a1500f7796e8240"
+      "Version": "0.1.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "ac5010e5a6bc7ca7bdc493a8867d42aa"
     },
     "markdown": {
       "Package": "markdown",
