@@ -1,0 +1,4 @@
+RENV_PATHS_CACHE = "~/AppData/Local/renv"
+RENV_PATHS_LIBRARY = "~/AppData/Local/Rlibs"
+RENV_PATHS_SOURCE =  "~/AppData/Local/Rsource"
+RENV_PATHS_BINARY = "~/AppData/Local/Rbin"
