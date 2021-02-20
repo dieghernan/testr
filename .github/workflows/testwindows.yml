@@ -42,6 +42,17 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add -A
-          git commit -m 'Run bot' || echo "No changes to commit"
+          git commit -m 'Run bot1' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
+          
+      - name: Run bot
+        run: Rscript R/trigger.R
+        
+      - name: Commit results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add -A
+          git commit -m 'Run bot2' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
 
